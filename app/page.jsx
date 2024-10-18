@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <section className="h-full">
       <div className="container h-full mx-auto">
-        <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-6 xl:pb-12">
+        <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pb-24">
           {/* Text Section */}
           <div className="order-2 text-center xl:text-center xl:order-none">
             <p className="mb-8 text-2xl md:font-extrabold md:text-4xl font-[family-name:var(--font-cairo-regular)]">
