@@ -13,12 +13,12 @@ const info = [
   {
     icon: <Mail />,
     title: "بريد الكتروني",
-    Description: "amine0924@gmail.com",
+    Description: "alhuwaimel.m@gmail.com",
   },
   {
     icon: <Map />,
     title: "Address",
-    Description: "16 Rue Omar Mokhtar, Ariana",
+    Description: "Riaydh  الرياض Saudi Arabia",
   },
 ];
 

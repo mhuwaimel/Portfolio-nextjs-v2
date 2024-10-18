@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/sheet";
 import { AlignLeft } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const links = [
   { name: "عنًِـي", path: "/" },
@@ -20,6 +21,8 @@ const links = [
 ];
 
 const MobileNav = () => {
+  const router = useRouter();
+
   const pathname = usePathname();
   return (
     <Sheet>
@@ -38,15 +41,15 @@ const MobileNav = () => {
         </div>
         <nav className="flex flex-col items-center justify-center gap-4">
           {links.map((link, index) => (
-            <Link
-              href={link.path}
+            <p
               key={index}
-              className={` font-[family-name:var(--font-changa-regular)] ${
+              onClick={() => router.push(link.path)}
+              className={` cursor-pointer font-[family-name:var(--font-changa-regular)] ${
                 link.path === pathname && "text-accent border-b-2 border-accent"
               }text-xl capitilized  hover:text-accent transition-all`}
             >
               {link.name}
-            </Link>
+            </p>
           ))}
         </nav>
       </SheetContent>
