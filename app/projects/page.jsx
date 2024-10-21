@@ -40,7 +40,7 @@ const Projects = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="group">
-                <div className="text-6xl md:text-8xl  leading-none font-extrabold text-transparent text-outline  group-hover:text-outline-hover transition-all duration-500">
+                <div className="text-6xl font-extrabold leading-none text-transparent transition-all duration-500 md:text-8xl text-outline group-hover:text-outline-hover">
                   {project.num}
                 </div>
               </div>
@@ -60,12 +60,12 @@ const Projects = () => {
                 {project.Description_All}
               </p>
               {/*stack  */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-2">
                 {project.techStack.map((item, index) => {
                   return (
                     <li
                       key={index}
-                      className=" text-accent text-xs lg:text-[15px] "
+                      className=" text-accent text-base lg:text-[15px] "
                     >
                       {item.name}{" "}
                       {index !== project.techStack.length - 1 && ","}
@@ -85,7 +85,7 @@ const Projects = () => {
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <ArrowUpLeft className="text-white text-3xl group-hover:text-accent" />
+                          <ArrowUpLeft className="text-3xl text-white group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>GitHub repository</p>
@@ -95,7 +95,7 @@ const Projects = () => {
                   </Link>
                 ) : (
                   <div className="w-[70px] h-[70px] rounded-full bg-gray-300 flex justify-center items-center cursor-not-allowed">
-                    <ArrowUpLeft className="text-gray-500 text-3xl" />
+                    <ArrowUpLeft className="text-3xl text-gray-500" />
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipContent>
@@ -120,7 +120,7 @@ const Projects = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       {/*overlay*/}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="absolute top-0 bottom-0 z-10 w-full h-full bg-black/10"></div>
                       {/*image */}
                       <div className="relative w-full h-full ">
                         <Image
