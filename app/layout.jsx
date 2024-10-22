@@ -26,7 +26,7 @@ export const metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   verification: {
-    google: "WVx7eEsjASR60PqML6j_K3wSyROLR5qqp8905y-Zv8Y",
+    google: "",
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
