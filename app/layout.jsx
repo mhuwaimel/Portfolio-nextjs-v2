@@ -25,9 +25,7 @@ export const metadata = {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
-  verification: {
-    google: "",
-  },
+ 
   description: siteConfig.description,
   keywords: siteConfig.keywords,
 
