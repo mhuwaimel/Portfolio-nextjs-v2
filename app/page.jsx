@@ -35,7 +35,7 @@ export default function Home() {
 
             {/* Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8 mb-6">
-              <a href="/Resume/Mohammed-CV.pdf" target="_blank">
+              <a href="/Resume/Cv-english.pdf" target="_blank">
                 <Button
                   // onClick={handleClick} //navigate to maintenance
                   variant="outline"
